@@ -1,0 +1,56 @@
+{
+  "name": "atropos",
+  "version": "1.0.2",
+  "description": "Touch-friendly 3D parallax hover effects",
+  "types": "atropos.d.ts",
+  "type": "module",
+  "svelte": "./esm/atropos.esm.js",
+  "exports": {
+    ".": "./esm/atropos.esm.js",
+    "./esm": "./esm/atropos.esm.js",
+    "./esm/atropos.esm.js": "./esm/atropos.esm.js",
+    "./esm/browser": "./esm/atropos.esm.browser.js",
+    "./esm/browser/min": "./esm/atropos.esm.browser.min.js",
+    "./react": "./react/atropos-react.esm.js",
+    "./vue": "./vue/atropos-vue.esm.js",
+    "./svelte": "./svelte/atropos-svelte.svelte",
+    "./css": "./atropos.css",
+    "./css/min": "./atropos.min.css",
+    "./less": "./atropos.less",
+    "./scss": "./atropos.scss",
+    "./atropos.js": "./atropos.js",
+    "./atropos.min.js": "./atropos.min.js",
+    "./atropos.css": "./atropos.css",
+    "./atropos.min.css": "./atropos.min.css",
+    "./atropos.less": "./atropos.less",
+    "./atropos.scss": "./atropos.scss",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nolimits4web/atropos.git"
+  },
+  "keywords": [
+    "atropos",
+    "effect",
+    "parallax",
+    "hover",
+    "3d",
+    "react",
+    "vue",
+    "javascript",
+    "portfolio",
+    "gallery",
+    "showcase"
+  ],
+  "author": "Vladimir Kharlampidi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nolimits4web/atropos/issues"
+  },
+  "homepage": "https://atroposjs.com",
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "releaseDate": "February 17, 2022"
+}

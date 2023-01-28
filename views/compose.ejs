@@ -1,0 +1,73 @@
+<%- include('partials/header') %>
+
+<form action="/compose/new" method="POST">
+  <fieldset>
+    <legend>Write up your blog here!</legend>
+
+    <label for="disabledTextInput" class="form-label">Category: </label>
+    <select class="form-select" aria-label="Default select example" name="category">
+        <option selected>Category</option>
+        <option value="Politics">Politics</option>
+        <option value="Food">Food</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Lifestyle">Lifestyle</option>
+        <option value="Technology">Technology</option>
+        <option value="Sports">Sports</option>
+        <option value="Education">Education</option>
+
+      </select>
+
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Author</label>
+      <input
+        type="text"
+        id="blogAuthor"
+        name="author"
+        class="form-control"
+        placeholder="Eg: Sherlock Holmes"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Title</label>
+      <input
+        type="text"
+        id="blogTitle"
+        name="title"
+        class="form-control"
+        placeholder="Eg: Cute Cats are Boring"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Content</label>
+      <textarea
+        type="text"
+        id="blogContent"
+        name="content"
+        class="form-control"
+        rows="5"
+        cols="2"
+        placeholder="Eg: To be honest I don't like ....."
+      /></textarea>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="public"
+          id="FieldsetCheck"
+        />
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Public
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+<%- include('partials/footer') %>
