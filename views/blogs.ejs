@@ -2,12 +2,14 @@
 
 <p>Category: <%= docs[0].category %></p>
 
+<hr>
+
 <% docs.forEach((element)=>{ %>
+
 <p><%= element.title %></p>
 <p><%= element.content %></p>
+
 <hr>
 <% }) %>
-<!-- <%  %>
-<%  %> -->
 
 <%- include('partials/footer') %>
