@@ -33,7 +33,7 @@ router.get('/auth/google/w2',
   passport.authenticate('google', { failureRedirect: '/profile/login' }),
   function(req, res) {
     // Successful authentication, redirect home.
-    res.redirect('/');
+    res.redirect('/blogs/politics');
   });
 
   router.get("/login", (req,res)=>
