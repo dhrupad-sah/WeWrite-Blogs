@@ -33,4 +33,4 @@ app.use("/compose", composeRouter);
 app.use("/blogs", blogsRouter);
 app.use("/profile", profileRouter);
 
-app.listen(3000, () => console.log("Connected to local host"));
+app.listen(process.env.PORT||3000, () => console.log("Connected to local host"));

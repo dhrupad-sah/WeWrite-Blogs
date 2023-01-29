@@ -14,7 +14,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/profile/auth/google/w2",
+      callbackURL: "https://w2blogs.onrender.com/profile/auth/google/w2",
     },
     function (accessToken, refreshToken, profile, cb) {
       Users.findOrCreate({ googleId: profile.id }, function (err, user) {
@@ -35,5 +35,10 @@ router.get('/auth/google/w2',
     // Successful authentication, redirect home.
     res.redirect('/');
   });
+
+  router.get("/login", (req,res)=>
+  {
+    res.render("login");
+  })
 
 module.exports = router;
