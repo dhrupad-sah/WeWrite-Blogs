@@ -1,5 +1,7 @@
 <%- include('partials/header') %>
 
+<p>Category: <%= docs[0].category %></p>
+
 <% docs.forEach((element)=>{ %>
 <p><%= element.title %></p>
 <p><%= element.content %></p>
